@@ -1,0 +1,32 @@
+/* import */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font: allura; */
+.allura {
+    font-family: "Allura";
+}
+
+/* font: noto; */
+.noto {
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.bg-gray-900-op {
+    background-color: rgba(17, 24, 39, 0.8);
+}
+
+.bg-white-op {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-title {
+  padding: 2rem 2rem;
+  border-top: 10px double white;
+  border-bottom: 10px double white;
+}
