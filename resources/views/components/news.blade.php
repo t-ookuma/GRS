@@ -43,7 +43,7 @@
                 <tbody class="text-sm divide-y divide-gray-100">
                     <tr>
                         <td class="p-2 whitespace-nowrap w-1/4">
-                            <div class="text-center">sampletext</div>
+                            <div class="text-center">yyyy-mm-dd</div>
                         </td>
                         <td class="p-2 whitespace-nowrap w-3/4">
                             <div class="text-center">sampletext</div>
@@ -51,7 +51,7 @@
                     </tr>
                     <tr>
                         <td class="p-2 whitespace-nowrap w-1/4">
-                            <div class="text-center">sampletext</div>
+                            <div class="text-center">yyyy-mm-dd</div>
                         </td>
                         <td class="p-2 whitespace-nowrap w-3/4">
                             <div class="text-center">sampletext</div>
@@ -59,7 +59,7 @@
                     </tr>
                     <tr>
                         <td class="p-2 whitespace-nowrap w-1/4">
-                            <div class="text-center">sampletext</div>
+                            <div class="text-center">yyyy-mm-dd</div>
                         </td>
                         <td class="p-2 whitespace-nowrap w-3/4">
                             <div class="text-center">sampletext</div>
@@ -67,7 +67,7 @@
                     </tr>
                     <tr>
                         <td class="p-2 whitespace-nowrap w-1/4">
-                            <div class="text-center">sampletext</div>
+                            <div class="text-center">yyyy-mm-dd</div>
                         </td>
                         <td class="p-2 whitespace-nowrap w-3/4">
                             <div class="text-center">sampletext</div>
