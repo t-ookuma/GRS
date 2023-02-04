@@ -73,6 +73,14 @@
                             <div class="text-center">sampletext</div>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="p-2 whitespace-nowrap w-1/4">
+                            <div class="text-center">yyyy-mm-dd</div>
+                        </td>
+                        <td class="p-2 whitespace-nowrap w-3/4">
+                            <div class="text-center">sampletext</div>
+                        </td>
+                    </tr>
                 </tbody>
                 <tfoot class="text-xs font-semibold text-gray-900 bg-white-op">
                     <tr>

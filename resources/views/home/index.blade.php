@@ -9,4 +9,5 @@
     @empty($news)
     <x-news news="test"></x-news>
     @endempty
+    <x-titleButton></x-titleButton>
 </x-layout>
