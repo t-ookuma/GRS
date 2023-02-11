@@ -1,0 +1,1 @@
+<x-layout title="Gymnasium Reservation System"></x-layout>
