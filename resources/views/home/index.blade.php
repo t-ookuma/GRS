@@ -2,12 +2,12 @@
     <!-- top image -->
     <img src="{{ asset('storage/sample.jpg') }}" alt="">
     <!-- news -->
-    <x-title title="{{$title}}" subTitle="{{ $subTitle }}"></x-title>
+    <x-title :$title :$subTitle></x-title>
     @isset($news)
-    <x-news news=""></x-news>
+    <x-news :$news></x-news>
     @endisset
     @empty($news)
-    <x-news news="test"></x-news>
+    <x-news news=""></x-news>
     @endempty
     <x-titleButton></x-titleButton>
 </x-layout>

@@ -17,7 +17,7 @@
 
 <body class="noto antialiased bg-gray-900">
     <!-- header -->
-    <header class="sticky top-0 bg-gray-900-op">
+    <header class="sticky top-0 z-50 bg-gray-900-op">
         <nav class=" flex justify-between px-10 items-center py-6">
             <div class="flex items-center space-x-2">
                 <!-- hamburger-menu -->
@@ -55,7 +55,7 @@
                     </div>
                 </nav>
                 <!-- app.name -->
-                <h1 class="text-white font-bold text-3xl allura cursor-pointer">{{ $title }}</h1>
+                <h1 class="text-white font-bold text-3xl allura cursor-pointer"><a href="/">{{ $title }}</a></h1>
             </div>
             <div class="flex items-center font-bold text-white">
                 <!-- dropdown-menu -->

@@ -1,4 +1,4 @@
-@if(is_null($news))
+@if($news == "")
 <div class="w-full max-w-2xl mx-auto rounded-sm border border-white border-dashed">
     <div class="p-3">
         <div class="overflow-x-auto">
@@ -28,7 +28,7 @@
         </div>
     </div>
 </div>
-@elseif(!is_null($news))
+@else
 <div class="w-full max-w-2xl mx-auto rounded-sm border border-white border-dashed">
     <div class="p-3">
         <div class="overflow-x-auto">
