@@ -17,14 +17,20 @@ class ScheduleController extends Controller
         $this->dayOfWeek = $dayOfWeek;
     }
 
-    public function form()
+    public function form(Request $request)
     {
         $dayOfWeekList = $this->dayOfWeek->getDayOfWeek();
-        $dateList = $this->getDays->getMonthlyDays($dayOfWeekList);
+        $dateList = $this->getDays->getMonthlyDays($dayOfWeekList, $request);
 
         return view('schedules.form')->with([
             'dateList' => $dateList,
-            'dayOfWeekList' => $dayOfWeekList
+            'dayOfWeekList' => $dayOfWeekList,
+            'result' => $request->input('filter'),
         ]);
+    }
+
+    public function list()
+    {
+        return view('reserves.list');
     }
 }

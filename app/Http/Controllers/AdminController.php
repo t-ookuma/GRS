@@ -10,4 +10,9 @@ class AdminController extends Controller
     {
         return view('admins.index');
     }
+
+    public function form()
+    {
+        return view('admins.form');
+    }
 }

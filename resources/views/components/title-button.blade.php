@@ -2,7 +2,10 @@
     <a href="/reserves">
         <x-button buttonName="予約する"></x-button>
     </a>
-    <a href="/admins">
+    <a href="/admins/1">
+        <x-button buttonName="マイページ"></x-button>
+    </a>
+    <a href="/users/1">
         <x-button buttonName="マイページ"></x-button>
     </a>
     <a href="">

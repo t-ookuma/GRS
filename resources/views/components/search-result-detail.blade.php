@@ -29,6 +29,7 @@
                                 対応種目：バレーボール,&nbsp;バスケットボール,&nbsp;バドミントン,&nbsp;<br>
                                 &emsp;&emsp;&emsp;&emsp;&emsp;フットサル,&nbsp;ハンドボール,&nbsp;
                             </li>
+                            <li class="my-5">人数上限：30名</li>
                             <li class="my-5">&emsp;リンク：<a class="hover:border-b hover:border-white" href="http://www.sapporookadama.hokkaido-c.ed.jp/">http://www.sapporookadama.hokkaido-c.ed.jp/</a></li>
                         </ul>
                     </div>
