@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Consts\TitleConst;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class HomeIndexController extends Controller
 {
     /**
      * @var TitleConst $titleConst
@@ -16,9 +16,12 @@ class HomeController extends Controller
     }
 
     /**
-     * Display a home index
+     * Handle the incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function __invoke(Request $request)
     {
         $title = $this->titleConst->getTitle('news');
         $subTitle = $this->titleConst->getSubTitle('news');

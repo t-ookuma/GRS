@@ -1,10 +1,14 @@
 <?php
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ReserveController;
-use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\AdminsFormController;
+use App\Http\Controllers\AdminsIndexController;
+use App\Http\Controllers\HomeIndexController;
+use App\Http\Controllers\ReservesDetailController;
+use App\Http\Controllers\ReservesFormController;
+use App\Http\Controllers\ReservesIndexController;
+use App\Http\Controllers\UsersFormController;
+use App\Http\Controllers\UsersHistoryController;
+use App\Http\Controllers\UsersIndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,18 +22,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+// home.index
+Route::get('/', HomeIndexController::class);
+// admins.index
+Route::get('/admins/{id}', AdminsIndexController::class);
+// admins.form
+Route::get('/admins/{id}/form', AdminsFormController::class);
+// reserves.index
+Route::get('/reserves', ReservesIndexController::class);
+// reserves.detail
+Route::get('/reserves/{id}', ReservesDetailController::class);
+// reserves.form
+Route::get('/reserves/{id}/form', ReservesFormController::class);
+// users.index
+Route::get('/users', UsersIndexController::class);
+// users.history
+Route::get('/users/{id}', UsersHistoryController::class);
+// users.form
+Route::get('/users/{id}/form', UsersFormController::class);
 
-Route::get('/users/{id}', [UserController::class, 'index']);
-Route::get('/users/{id}/history', [UserController::class, 'history']);
-Route::get('/users/{id}/form', [UserController::class, 'form']);
-Route::get('/admins/{id}', [AdminController::class, 'index']);
-Route::get('/admins/{id}/form', [AdminController::class, 'form']);
-Route::get('/schedules/{id}/form', [ScheduleController::class, 'form']);
-Route::get('/schedules/{id}/list', [ScheduleController::class, 'list']);
-Route::get('/reserves', [ReserveController::class, 'index']);
-Route::get('/reserves/{id}', [ReserveController::class, 'detail']);
-Route::get('/reserves/{id}/form', [ReserveController::class, 'form']);
 Route::middleware('auth')->group(function () {
 });
 
